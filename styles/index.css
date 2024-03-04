@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root{
+    --white: #ffffff;
+    --black: #000000;
+}
+
 *{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -11,7 +16,7 @@ body{
     background: linear-gradient(to bottom, #060313, #0C0121);
 }
 
-h1{ font-size: 96px; }
+h1{ font-size: 96px; color: var(--white); }
 h2{ font-size: 60px; }
 h3{ font-size: 48px; }
 h4{ font-size: 34px; }
