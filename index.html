@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="./styles/index.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-database.js"></script>
+    <script src="./scripts/formStorage.js" type="module"></script>
+    <script src="./scripts/formData.js"></script>
     <script src="./scripts/input-mask.js"></script>
     <title>Alpha Farm - Contingência de Verdade</title>
 </head>
@@ -25,15 +29,15 @@
             </div>
             <div class="w-50">
                 <div class="column align-center t-center">
-                    <form action="post">
+                    <form id="dataCapture">
                         <h5>Para onde devo enviar?</h5>
                         <label>Preencha os dados abaixo para receber seu material <b>GRATUITMENTE</b></label>
-                        <input type="text" placeholder="Nome completo" required>
+                        <input type="text" id="name" name="name" placeholder="Nome completo" required>
                         <div class="w-100 opposite">
-                            <input class="w-50" type="email" placeholder="Seu melhor E-mail" required>
-                            <input class="w-50" type="text" placeholder="Seu WhatsApp" id="telefone" required>
+                            <input class="w-50" type="email" id="email" name="email" placeholder="Seu melhor E-mail" required>
+                            <input class="w-50" type="text" id="telephone" name="telephone" placeholder="Seu WhatsApp" required>
                         </div>
-                        <input type="button" class="btn btn-purple" value="RECEBER MEU MATERIAL">
+                        <input type="button" onclick="formValidate()" class="btn btn-purple" value="RECEBER MEU MATERIAL">
                     </form>
                 </div>
             </div>
