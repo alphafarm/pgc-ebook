@@ -15,21 +15,29 @@ function formValidate() {
 
     if (emailValidate(email) && telephoneValidate(telephone)) {
         var scriptUrl = "https://script.google.com/macros/s/AKfycbwrNrKHEvTsWjy3JyrMxuyVAjsnGsvdUI5V797PGVXlHHZRfDugZTRf6--Et_VOPtWz4g/exec";
-        
+
         fetch(scriptUrl, {
             method: "POST",
-            body: "name=" + encodeURIComponent(name) + "&email=" + encodeURIComponent(email) + "&telephone=" + encodeURIComponent(telephone),
+            body: new URLSearchParams({
+                'name': name,
+                'email': email,
+                'telephone': telephone
+            }),
             headers: {
                 "Content-Type": "application/x-www-form-urlencoded"
             }
         }).then(response => {
-            console.log(response);
-            alert("dados enviados com sucesso!");
+            if (!response.ok) {
+                throw new Error('Erro na solicitação. Status: ' + response.status);
+            }
+            return response.text();
+        }).then(data => {
+            console.log(data);
+            alert("Dados enviados com sucesso!");
         }).catch(error => {
             console.error("Erro ao enviar dados:", error);
         });
 
-        //window.location.href = './../data/ebook.pdf';
     } else {
         alert('Por favor, insira um e-mail e um telefone válidos.');
     }
