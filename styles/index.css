@@ -5,6 +5,7 @@
     --black: #000000;
     --red: #FF0000;
     --green: #00ff59;
+    --purple: #D42AFF;
 
     --input-bg-color: rgba(255, 255, 255, 0.2);
     --input-bg-color-hover: rgba(255, 255, 255, 0.5);
@@ -47,8 +48,12 @@ h6{ font-size: 20px; }
 p{ font-size: 16px; }
 span{ font-size: 14px; }
 
-h1, h2, h3, h4, h5, h6, b{
+h1, h2, h3, h4, h5, h6, b, b1{
     font-weight: 600;
+}
+
+b1{
+    color: var(--purple);
 }
 
 h1, h2, h3, h4, h5, h6, p, span, label{
