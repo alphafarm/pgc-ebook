@@ -4,6 +4,7 @@
     --white: #ffffff;
     --black: #000000;
     --red: #FF0000;
+    --green: #00ff59;
 
     --input-bg-color: rgba(255, 255, 255, 0.2);
     --input-bg-color-hover: rgba(255, 255, 255, 0.5);
@@ -90,6 +91,8 @@ input:hover, input::selection{
 
 .t-white{ color: var(--white); }
 .t-black{ color: var(--black); }
+.t-red{ color: var(--red); }
+.t-green{ color: var(--green); }
 
 .container{
     width: 100%;
@@ -104,6 +107,8 @@ input:hover, input::selection{
 .m-top-5{ margin: 5% 0; }
 
 .m-top-2{ margin: 2% 0; }
+
+.m-left-1{ margin: 0 1%; }
 
 .bolder{ font-weight: var(--bolder-weight); }
 
@@ -137,6 +142,7 @@ input:hover, input::selection{
     padding: var(--btn-padding);
     text-align: center;
     text-decoration: none;
+    text-transform: uppercase;
     transition: .6s ease;
 }
 
