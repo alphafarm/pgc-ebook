@@ -7,6 +7,8 @@
     --green: #00ff59;
     --purple: #D42AFF;
 
+    --container-padding: 2%;
+
     --input-bg-color: rgba(255, 255, 255, 0.2);
     --input-bg-color-hover: rgba(255, 255, 255, 0.5);
     --input-radius: 8px;
@@ -16,11 +18,12 @@
     --btn-purple: linear-gradient(to right, #D42AFF, #7F1999);
     --btn-radius: 8px;
     --btn-margin: 2% 0;
-    --btn-padding: 2%;
+    --btn-padding: 1%;
 
     --box-radius: 8px;
-    --box-margin: 1% 0;
-    --box-padding: 2%;
+    --box-margin: 0;
+    --box-padding: 1%;
+    --box-height: 35%;
 
     --bolder-weight: 600;
     --regular-weight: 400;
@@ -31,11 +34,10 @@
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: lighter;
-    margin: 0;
 }
 
 body{
-    padding: 4%;
+    margin: 0;
     background: linear-gradient(to bottom, #060313, #0C0121);
 }
 
@@ -101,19 +103,37 @@ input:hover, input::selection{
 
 .container{
     width: 100%;
+    padding: var(--container-padding);
     display: flex;
     flex-direction: column;
 }
 
 .w-100{ width: 100%; }
 
-.w-50{ width: 49%; }
+.w-48{ width: 48%; }
 
-.m-top-5{ margin: 5% 0; }
+.w-50{ width: 50%; }
+
+.h-50{ height: 50%; }
+
+.m-top-1{ margin: 1% 0; }
 
 .m-top-2{ margin: 2% 0; }
 
+.m-top-5{ margin: 5% 0; }
+
 .m-left-1{ margin: 0 1%; }
+
+.p-2{ padding: 2%; }
+
+.p-top-1{ padding: 1% 0; }
+
+.p-top-2{ padding: 2% 0; }
+
+.p-top-5{ padding: 5% 0; }
+
+.p-left-1{ padding: 0 1%; }
+
 
 .bolder{ font-weight: var(--bolder-weight); }
 
@@ -129,7 +149,7 @@ input:hover, input::selection{
     flex-direction: row;
 }
 
-.align-center{
+.center{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -155,6 +175,7 @@ input:hover, input::selection{
 
 .box{
     border-radius: var(--box-radius);
+    height: var(--box-height);
     margin: var(--box-margin);
     padding: var(--box-padding);
 }
@@ -177,9 +198,9 @@ input:hover, input::selection{
     width: 8%;
 }
 
-.albert-logo { width: 50%; }
+.albert-logo { width: 20%; padding: 0 2%; }
 
-.learn-item{ transition: .6s ease; }
+.learn-item{ transition: .6s ease; margin: 1% 2%!important }
 
 .learn-item:hover, .btn:hover{ transform: scale(105%); }
 
