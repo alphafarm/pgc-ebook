@@ -205,3 +205,70 @@ input:hover, input::selection{
 .learn-item:hover, .btn:hover{ transform: scale(105%); }
 
 .learn-item, .btn, input[type=button]{ cursor: pointer; }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .cta{
+        flex-direction: column !important;
+    }
+
+    .cta-l, .cta-r{
+        width: 100%;
+    }
+
+    .cta-l > div > p{
+        text-align: center;
+    }
+
+    .alert-logo{
+        top: -30%;
+        left: -4%;
+        width: 9%;
+    }
+
+    .albert{
+        width: 100% !important;
+    }
+
+    h6{font-size: 16px !important;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    :root{
+        --box-margin: 2% !important;
+        --box-padding: 1.5% !important;
+    }
+    form{width: 95%;}
+    h3{font-size: 24px;}
+    h6{font-size: 18px;}
+    .alpha-logo{margin-bottom: 5%; width: 35%}
+    .albert-logo{padding-right: 5%;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    :root{
+        --box-margin: 2% !important;
+        --box-padding: 1.5% !important;
+    }
+    form{width: 95%;}
+    h3{font-size: 24px;}
+    h6{font-size: 18px;}
+    .alpha-logo{margin-bottom: 5%; width: 35%}
+    .albert-logo{padding-right: 5%;}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    :root{
+        --box-margin: 2% !important;
+        --box-padding: 1.5% !important;
+    }
+    h3{font-size: 34px;}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+}

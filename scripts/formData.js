@@ -133,7 +133,7 @@ var labels = {
   
   function downloadMaterial() {
     var link = document.createElement('a');
-    link.href = './../data/ebook.pdf';
+    link.href = 'https://drive.google.com/uc?id=1FJpYbgu25nXb3Ymc7iVvTEgOjKgMj3KS';
     link.download = 'Manual_Do_Anunciante_Alpha.pdf';
   
     document.body.appendChild(link);
