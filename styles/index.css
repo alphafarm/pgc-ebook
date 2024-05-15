@@ -41,8 +41,8 @@ body{
     /*
     background: linear-gradient(to bottom, #060313, #0C0121);
     */
-    background: #0C0121 url("../img/background-alpha.png") no-repeat center top fixed;
-    backdrop-filter: brightness(0.6) blur(3px);
+    background: #0C0121 url("../img/background-alpha.png") no-repeat center top fixed !important;
+    backdrop-filter: brightness(0.6) blur(3px)!important;
 }
 
 section, footer{
@@ -333,7 +333,7 @@ input:hover, input::selection{
     h6{font-size: 18px;}
     .alpha-logo{margin-bottom: 5%; width: 35%}
     .albert-logo{ width:45%; padding-right: 5%;}
-    body{ background-size: cover; }
+    body{ background-size: cover!important; }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -348,7 +348,7 @@ input:hover, input::selection{
     .alpha-logo{margin-bottom: 5%; width: 35%!important}
     .albert-logo{padding-right: 5%;}
     .all-content{ width: 80%!important; }
-    body{ backdrop-filter: brightness(0.5) blur(6px); }
+    body{ backdrop-filter: brightness(0.5) blur(6px)!important; }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
