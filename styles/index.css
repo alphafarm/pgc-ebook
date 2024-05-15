@@ -43,6 +43,7 @@ body{
     */
     background: #0C0121 url("../img/background-alpha.png") no-repeat center top fixed !important;
     backdrop-filter: brightness(0.6) blur(3px)!important;
+    -webkit-backdrop-filter: brightness(0.6) blur(3px)!important;
 }
 
 section, footer{
@@ -348,7 +349,11 @@ input:hover, input::selection{
     .alpha-logo{margin-bottom: 5%; width: 35%!important}
     .albert-logo{padding-right: 5%;}
     .all-content{ width: 80%!important; }
-    body{ backdrop-filter: brightness(0.5) blur(6px)!important; }
+    body{ 
+        backdrop-filter: brightness(0.5) blur(6px)!important;
+        -webkit-backdrop-filter: brightness(0.5) blur(6px)!important;
+    }
+    
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
